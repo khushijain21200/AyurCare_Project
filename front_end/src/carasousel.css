@@ -1,0 +1,34 @@
+@keyframes spin3D {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes wave3D {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) translateZ(0px);
+  }
+  25% {
+    transform: rotateX(10deg) rotateY(-5deg) translateZ(10px);
+  }
+  50% {
+    transform: rotateX(-10deg) rotateY(5deg) translateZ(-10px);
+  }
+  75% {
+    transform: rotateX(5deg) rotateY(-5deg) translateZ(5px);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) translateZ(0px);
+  }
+}
+
+.jhoola {
+  animation: spin3D 20s linear infinite;
+}
+
+.carousel-item {
+  transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(150px);
+}
