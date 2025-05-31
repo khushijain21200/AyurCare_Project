@@ -17,8 +17,8 @@ It is a smart healthcare monitoring system that combines modern technology with 
 ## 🛠️ Tech Stack
 
 - **Frontend:** React, Tailwind CSS, Vite
-- **Backend:** PHP (for secure messaging), WebSockets
-- **IoT Integration:** AWS IoT Core / Google Cloud IoT (Pluggable)
+- **Backend:** Node.js, WebSockets
+- **IoT Integration:** AWS IoT Core 
 - **Security:** AES-256, TLS/SSL
 - **AI/ML:** Anomaly detection using trained models
 
