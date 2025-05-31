@@ -31,17 +31,21 @@ It is a smart healthcare monitoring system that combines modern technology with 
    git clone https://github.com/himanshu70-17/Ayrucare.git
    cd Ayrucare
 
-2. Start the Backend Servers:
+2. Start Python file:
+    ```bash
+   python model_api.py
+    
+3. Start the Backend Servers:
     ```bash
    cd server
    node index.js
 
-3. Start the Chat Servers:
+4. Start the Chat Servers:
     ```bash
    cd server/chat_server
    node server.js
 
-4. Start frontend:
+5. Start frontend:
     ```bash    
    cd front_end
    npm install
@@ -62,6 +66,8 @@ It is a smart healthcare monitoring system that combines modern technology with 
 ![Screenshot (84)](https://github.com/user-attachments/assets/b1c1cd8c-fdd7-4164-bc02-ccde4b6fd563)
 ![Screenshot (85)](https://github.com/user-attachments/assets/ddcc44f5-3b81-42e8-a2a4-2bde98b7ad33)
 ![Screenshot (86)](https://github.com/user-attachments/assets/1128466e-d0cb-4c18-b49b-9b9939cfabfd)
+![image](https://github.com/user-attachments/assets/42208d06-2c58-402e-b9be-849bf9a6b487)
+
 
 
 ---
