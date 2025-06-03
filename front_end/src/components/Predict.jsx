@@ -74,7 +74,7 @@ export function Predict() {
 
     async function find() {
       try {
-        const res = await axios.post("http://localhost:3002/predict", {
+        const res = await axios.post("https://ayurcare-project.onrender.com/predict", {
           Token: token,
         });
         setUser(res.data.User);
@@ -126,7 +126,7 @@ export function Predict() {
       
           <div className="flex items-center gap-6 mb-6 ml-7 ">
             <img
-              src={`http://localhost:3002${user.profileImage}` }
+              src={`https://ayurcare-project.onrender.com${user.profileImage}` }
               alt="Profile"
               className="w-24 h-24 p-2 border-2 shadow-lg object-cover rounded-full"
             />
@@ -260,7 +260,7 @@ export function Predict() {
                       onClick={async () => {
                         setSelect(item);
                         const token = localStorage.getItem("Token");
-                        await axios.post("http://localhost:3002/disease", {
+                        await axios.post("https://ayurcare-project.onrender.com/disease", {
                           token: token,
                           disease: item.disease,
                           probability: item.probability * 100,
