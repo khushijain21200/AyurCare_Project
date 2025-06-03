@@ -14,7 +14,7 @@ export function History() {
 
     async function find() {
       try {
-        const response = await axios.post("http://localhost:3002/history", {
+        const response = await axios.post("https://ayurcare-project.onrender.com/history", {
           Token: token,
         });
         setUser(response.data.User);
@@ -39,7 +39,7 @@ export function History() {
 
             <div className="flex items-center gap-6 mb-6 ml-7">
             <img
-              src={`http://localhost:3002${user.profileImage}` }
+              src={`https://ayurcare-project.onrender.com${user.profileImage}` }
               alt="Profile"
               className="w-24 h-24 p-2 border-2 shadow-md object-cover rounded-full"
             />
