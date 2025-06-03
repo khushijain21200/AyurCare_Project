@@ -89,7 +89,7 @@ export function Predict() {
   const handleSubmit = async () => {
     setLoading(true);
     try {
-      const response = await axios.post("http://127.0.0.1:5000/predict", {
+      const response = await axios.post("https://ayurcare-project.onrender.com/predict", {
         symptoms: selectedSymptoms,
       });
       setPredictions(response.data.top_predictions);
