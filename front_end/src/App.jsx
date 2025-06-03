@@ -153,28 +153,39 @@ function NavBar() {
     </header>
   );
 }
-
 export default function App() {
-
-  
   return (
     <AppProvider>
-    <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path="/dash" element={<Dash />} />
-        <Route path="/Signup" element={<Signup />} />
-        <Route path="/Signin" element={<Signin />} />
-        <Route path="/history" element={<History />} />
-        <Route path="/predict" element={<Predict />} />
-        <Route path="/chat" element={<Chat/>}/>
-        <Route path="/pres" element={<Pres/>}/>
-        <Route path="/doc" element={<Doc/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/career" element={<Career/>}/>
-        <Route path="/" element={<Front/>}/>
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+
+          {/* Routes with NavBar */}
+          <Route
+            path="*"
+            element={
+              <>
+                <NavBar />
+                <Routes>
+                  <Route path="/dash" element={<Dash />} />
+                  <Route path="/Signup" element={<Signup />} />
+                  <Route path="/Signin" element={<Signin />} />
+                  <Route path="/history" element={<History />} />
+                  <Route path="/predict" element={<Predict />} />
+                  <Route path="/chat" element={<Chat />} />
+                  <Route path="/pres" element={<Pres />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/career" element={<Career />} />
+                  <Route path="/" element={<Front />} />
+                </Routes>
+              </>
+            }
+          />
+
+          {/* Route without NavBar */}
+          <Route path="/doc" element={<Doc />} />
+
+        </Routes>
+      </BrowserRouter>
     </AppProvider>
   );
 }
