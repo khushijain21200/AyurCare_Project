@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import { useLocation } from "react-router-dom";
 import axios from "axios"
 
-const socket = io("http://localhost:3000");
+const socket = io("https://ayurcare-project-chat-server.onrender.com");
 
 export  function Doc() {
   const location = useLocation();
