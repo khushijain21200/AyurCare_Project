@@ -17,7 +17,7 @@ export function Pres() {
     const fetchDisease = async () => {
       if (diseaseName) {
         try {
-          const response = await axios.post("http://localhost:3002/diseased", {
+          const response = await axios.post("https://ayurcare-project.onrender.com/diseased", {
             dis: diseaseName,
           });
           setDiseaseData(response.data);
