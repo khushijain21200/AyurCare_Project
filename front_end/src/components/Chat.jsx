@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { io } from "socket.io-client";
 import { useLocation } from "react-router-dom";
 
-const socket = io("http://localhost:3000");
+const socket = io("https://ayurcare-project-chat-server.onrender.com");
 
 export default function App() {
   const location=useLocation()
