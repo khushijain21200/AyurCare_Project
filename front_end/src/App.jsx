@@ -102,7 +102,7 @@ function NavBar() {
                 localStorage.clear()
                 navigate("/")
                 alert("Logout Successfull")
-              }}className="border relative border-blue-800 text-blue-800 px-4 py-2 rounded hover:bg-blue-800 hover:text-white transition left-[100px]">
+              }}className="border relative border-blue-800 text-blue-800 px-4 py-2 rounded hover:bg-blue-800 hover:text-white ">
                 <LogIn size={20} className="inline-block mr-1" />
                 LOGOUT
               </button>
