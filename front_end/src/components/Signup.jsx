@@ -66,7 +66,7 @@ export function Signup() {
 
     try {
       const response = await axios.post(
-        'http://localhost:3002/signup',
+        'https://ayurcare-project.onrender.com/signup',
         formData,
         {
           headers: {
