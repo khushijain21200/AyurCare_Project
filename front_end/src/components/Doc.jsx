@@ -52,7 +52,7 @@ export  function Doc() {
 
     setRoom(docRoom);
     try{
-    const response=await axios.post("http://localhost:3002/docauth",
+    const response=await axios.post("https://ayurcare-project.onrender.com/docauth",
       {
         username:username,
         password:password
